@@ -1,0 +1,148 @@
+#nvn{
+    font-family: 'Teko', sans-serif;
+	height:100vh;
+	min-height:550px;
+	background-image: url(../../assets/images/w_hube_ent.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+    overflow-y: hidden;
+}
+
+.white-panel{
+    background-color: #ecf0f3;
+	// background-image: linear-gradient(to bottom left, blue, #ecf0f3, purple);
+    height:500px;
+    position:absolute;
+    width:40%;
+    left:calc(60% - 50px);
+    top:calc(100% - 90%);
+    transition:.3s ease-in-out;
+    z-index:0;
+    box-shadow: 0 0 15px 9px #00000096;
+}
+
+.input-group-text{
+    width: 50px;
+	border-radius: 20px;
+	background: none;
+	box-shadow: inset 0px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+input{
+	display: block;
+	border: none;
+	outline: none;
+	background: none;
+	color: #666;
+	border-radius: 20px;
+	box-shadow: inset 0px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+h3{
+	margin-top: 20%;
+}
+
+form{
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+button{
+	margin-top: 10%;
+	width: 100%;
+	border-radius: 20px;
+	color: black ;
+	// background: rgb(125,67,133);
+	background-image: linear-gradient(to left, rgb(12, 53, 105), #ecf0f3, purple);
+	transition:.3s ease-in-out;
+}
+
+button:hover{
+	color: purple;
+	font-size: 1.5rem;
+	border-radius: 60px;
+}
+
+svg{
+	margin-left: 50%;
+	fill: rgb(201,115,221);
+	width: 15px;
+}
+
+@media only screen and (max-width: 745px) {
+	#nvn{
+		background-image: url(../../assets/images/w_hube.png);
+		background-position:center;
+	}
+	
+	.white-panel{
+		background-color: #0b2133ab;
+		width:100%;
+		left: 0;
+		top:calc(100% - 60%);
+	}
+	
+	h3{
+		color: #fff;
+	}
+
+	.input-group-text{
+		background: #ecf0f3;
+	}
+	
+	input{
+		background: #ecf0f3;
+	}
+
+	button{
+		margin-top: 10%;
+		width: 100%;
+		border-radius: 20px;
+		color: white;
+		background: inherit;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+	
+	.white-panel{
+		background-color: #0b2133ab;
+		width:100%;
+		left: 0;
+		top:calc(100% - 42%);
+	}
+
+	h3{
+		margin-top: 0;
+		color: #fff;
+	}
+
+	.input-group-text{
+		background: #ecf0f3;
+		width: 80px;
+		border-radius: 40px;
+	}
+	
+	input{
+		background: #ecf0f3;
+		font-size: 2rem;
+		border-radius: 40px;
+	}
+
+	svg{
+	width: 40px;
+	}
+
+	button{
+		margin-top: 10%;
+		width: 100%;
+		font-size: 2rem;
+		border-radius: 40px;
+		background: inherit;
+		color: white;
+	}
+}

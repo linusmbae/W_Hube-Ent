@@ -1,0 +1,291 @@
+#nvn{
+    font-family: 'Teko', sans-serif;
+	height:100vh;
+	min-height:550px;
+	background-image: url(../../assets/images/w_hube.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+    overflow-y: hidden;
+}
+
+a{
+    font-family: 'Teko', sans-serif;
+    text-decoration:none;
+    color:#444444;
+  }
+
+  .login-reg-panel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align:center;
+    width:70%;
+	right:0;left:0;
+    margin:auto;
+    height:400px;
+    background-color: rgba(148, 56, 143, 0.692);
+    border-radius: 10px;
+}
+    
+.white-panel{
+    background-color: #ecf0f3;
+    height:500px;
+    position:absolute;
+    top:-50px;
+    width:50%;
+    right:calc(50% - 50px);
+    transition:.3s ease-in-out;
+    z-index:0;
+    box-shadow: 0 0 15px 9px #00000096;
+    border-radius: 10px;
+}
+
+.login-reg-panel input[type="radio"]{
+    position:relative;
+    display:none;
+}
+.login-reg-panel{
+    color:#ffffff;
+}
+.login-reg-panel #label-login, 
+.login-reg-panel #label-register{
+    border:1px solid pink;
+    padding:5px 5px;
+    width:150px;
+    display:block;
+    text-align:center;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight: 600;
+    font-size: 18px;
+    transition:.3s ease-in-out;
+}
+
+.login-reg-panel #label-login:hover, 
+.login-reg-panel #label-register:hover{
+    font-size: 1.5rem;
+}
+
+.login-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    left:0;
+    position:absolute;
+    text-align:left;
+}
+.register-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    right:0;
+    position:absolute;
+    text-align:left;
+    
+}
+.right-log{right:50px !important;}
+
+.login-show, 
+.register-show{
+    z-index: 1;
+    display:none;
+    opacity:0;
+    transition:0.3s ease-in-out;
+    color:#242424;
+    text-align:left;
+    padding:50px;
+}
+.show-log-panel{
+    display:block;
+    opacity:0.9;
+}
+
+.login-show a{
+    display:inline-block;
+    padding:10px 0;
+}
+
+
+a{
+  text-decoration:none;
+  color:#2c7715;
+}
+
+.input-group-text{
+    width: 50px;
+	border-radius: 10px;
+	background: none;
+	box-shadow: inset 0px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+input{
+	display: block;
+	border: none;
+	outline: none;
+	background: none;
+	color: #666;
+	border-radius: 10px;
+	box-shadow: inset 0px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+button{
+	margin-top: 10%;
+	width: 100%;
+	border-radius: 10px;
+	color: black ;
+	// background: rgb(125,67,133);
+	background-image: linear-gradient(to left, rgb(12, 53, 105), #ecf0f3, purple);
+	transition:.3s ease-in-out;
+}
+
+button:hover{
+	color: purple;
+	font-size: 1.5rem;
+}
+
+svg{
+	margin-left: 50%;
+	fill: rgb(201,115,221);
+	width: 15px;
+}
+    
+@media only screen and (max-width: 745px) {
+    #nvn{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    a{
+        font-family: 'Teko', sans-serif;
+        text-decoration:none;
+    }   
+      
+      .login-reg-panel{
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          text-align:center;
+          width:100%;
+          right:0;left:0;
+          margin:0;
+          height:400px;
+          background-color: pink;
+          background-image: linear-gradient(to bottom left, blue, purple) !important;
+      }
+
+      .white-panel{
+          background-color: rgba(255,255, 255, 1);
+          height:500px;
+          position:absolute;
+          top:-50px;
+          width:60%;
+          right:calc(54% - 50px);
+          transition:.3s ease-in-out;
+          z-index:0;
+          box-shadow: 0 0 15px 9px #00000096;
+      }
+
+      .login-reg-panel{
+        color:#fff;
+        font-size: .1rem;
+      }
+
+      .login-reg-panel #label-login, 
+      .login-reg-panel #label-register{
+          border:1px solid #9E9E9E;
+          padding:5px 5px;
+          width:120px;
+          display:block;
+          text-align:center;
+          border-radius:10px;
+          cursor:pointer;
+          font-weight: 600;
+          font-size: 18px;
+      }
+
+      .login-info-box{
+          width:40%;
+          padding:0 10px;
+          top:20%;
+          left:0;
+          position:absolute;
+          text-align:left;
+      }
+
+      .register-info-box{
+          width:40%;
+          padding:0 10px;
+          top:20%;
+          right:0;
+          position:absolute;
+          text-align:left;
+      }
+    
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      margin-bottom: 0.5rem;
+      font-family: 'Teko', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.2;
+      color: inherit;
+      }
+
+      .right-log{right:0 !important;}
+      
+      .login-show, 
+      .register-show{
+          z-index: 1;
+          display:none;
+          opacity:0;
+          transition:0.3s ease-in-out;
+          color:#242424;
+          text-align:left;
+          padding:20px;
+      }
+      .show-log-panel{
+          display:block;
+          opacity:0.9;
+      }
+     
+      .login-show a{
+          display:inline-block;
+          padding:10px 0;
+      }
+
+      .input-group{
+          margin-bottom: 20px;
+      }
+} 
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    #nvn{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+          
+      .login-reg-panel{
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          text-align:center;
+          width:100%;
+          right:0;left:0;
+          margin:0;
+          height:400px;
+          background-color: pink;
+          background-image: linear-gradient(to bottom left, blue, purple) !important;
+      }
+
+    .register-info-box,
+    .login-info-box{
+        width:40%;
+    }
+
+    .login-reg-panel #label-login, 
+    .login-reg-panel #label-register{
+        width: 200px !important;
+        font-size: 20px;
+    }
+}
+    
