@@ -1,0 +1,72 @@
+.home{
+    height: 100vh;
+  }
+  
+  h3 {
+      display: inline-block;
+      padding: 10px;
+      background: blue;
+      background-image: linear-gradient(to bottom left, purple, rgb(3, 3, 95) ) !important;
+      font-weight: 900;
+    }
+    
+    .p {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 13px;
+    }
+  
+   
+  
+    .carousel {
+      position: relative;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .carousel-item {
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    
+    .carousel-caption{
+        bottom: 250px;
+    }
+  
+    .carousel-1{
+      background-image: url(../../assets/images/supply.jpg);
+  
+    }
+  
+    .carousel-2{
+      background-image: url(../../assets/images/seo.jpg);
+  
+    }
+  
+    .carousel-3{
+      background-image: url(../../assets/images/wifi.jpg);
+  
+    }
+  
+    .carousel-4{
+      background-image: url(../../assets/images/cyber.jpg);
+  
+    }
+  
+    .carousel-5{
+      background-image: url(../../assets/images/photography.jpg);
+  
+    }
+  
+    .carousel-6{
+      background-image: url(../../assets/images/support.jpg);
+  
+    }
+  
+    @media only screen and (max-width: 745px){
+   
+    }

@@ -1,0 +1,79 @@
+footer{
+    background-image: linear-gradient(to bottom left, rgb(3, 3, 95), purple);
+}
+
+#footer{
+    padding-top: 20px;
+}
+
+.footer-img{
+    margin-right: 10px;
+    border-radius: 50px;
+    border: solid .5px #fe59d7;
+}
+
+.svg-footer{
+    fill: #fe59d7;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.heart{
+    fill: rebeccapurple;
+    width: 20px;
+}
+
+.icon{
+    border: solid .5px #fe59d7;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+ul.list-unstyled{
+    li{
+        a{
+            color: rgba(255,255,255,.5);
+            text-decoration: none;
+            transition: .5s ease-in-out;
+        }
+    }
+}
+
+ul.list-unstyled{
+    li{
+        a:hover{
+            font-size: 1.2rem;
+            transition: .5s ease-in-out;
+        }
+    }
+}
+
+.footer-abt{
+    color: rgba(255,255,255,.5);
+}
+
+.find-us{
+    color: rgba(255,255,255,.5);
+}
+
+.find-us svg{
+    fill: #fe59d7;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.copyright a{
+    font-size: .8rem;
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+.copyright a:hover{
+    font-size: 1rem;
+    font-weight: 700;
+    transition: .5s ease-in-out;
+}

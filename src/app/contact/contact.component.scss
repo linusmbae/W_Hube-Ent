@@ -1,0 +1,81 @@
+#contact{
+    // height: 100vh;
+    min-height:100vh;
+    background: #ecf0f3;
+    background-image: linear-gradient(to left, #fff, #ecf0f3) !important;
+    padding-top: 15vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #000;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+#fh5co-main {
+  
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#fh5co-main .fh5co-narrow-content {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+
+#message {
+  height: 120px !important;
+}
+.btn.btn-md {
+  padding: 10px 25px !important;
+}
+.btn-primary {
+    background: #da1212 !important;
+    background-image: linear-gradient(to left, rgb(12, 53, 105), #ecf0f3, purple) !important;
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+    border-radius: 20px !important;
+    transition:.5s ease-in-out;
+    width: 100%;
+}
+.btn-primary:hover{
+    color: purple;
+	font-size: 1.5rem;
+	border-radius: 60px;
+    transition:.5s ease-in-out;
+}
+
+.input-group-text{
+    width: 50px;
+	border-radius: 20px;
+	background: none;
+	box-shadow: inset 0px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+input{
+	display: block;
+	border: none;
+	outline: none;
+	background: none;
+	color: #666;
+	border-radius: 20px;
+	box-shadow: inset 0px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+    height: 45px;
+}
+
+textarea{
+    display: block;
+	border: none;
+	outline: none;
+	background: none;
+	color: #666;
+	border-radius: 20px;
+	box-shadow: inset 0px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+svg{
+	fill: rgb(201,115,221);
+	width: 20px;
+}
