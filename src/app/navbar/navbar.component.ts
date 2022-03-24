@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+// declare var $: any;
 
 
 @Component({
@@ -13,6 +14,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     // ---------Responsive-navbar-active-animation-----------
+	
 	function test() {
 		var tabsNewAnim = $("#navbarSupportedContent");
 		var selectorNewAnim = $("#navbarSupportedContent").find("li").length;
@@ -27,6 +29,7 @@ export class NavbarComponent implements OnInit {
 			height: activeWidthNewAnimHeight + "px",
 			width: activeWidthNewAnimWidth + "px"
 		});
+
 		$("#navbarSupportedContent").on("click", "li", function (e) {
 			$("#navbarSupportedContent ul li").removeClass("active");
 			$(this).addClass("active");
@@ -42,6 +45,12 @@ export class NavbarComponent implements OnInit {
 			});
 		});
 	}
+
+	$(document).ready(function(){
+		setTimeout(function () {
+			test();
+		});
+	});
 
 	$(window).on("resize", function () {
 		setTimeout(function () {
@@ -62,24 +71,23 @@ export class NavbarComponent implements OnInit {
 			test();
 		});
 	});
+	
 
 	// --------------add active class-on another-page move----------
-	$(document).ready(function ($ : any) {
-		setTimeout(function () {
-			test();
-		});
+	// $(document).ready(function ($) {
+	
 
-		// var topMenu = $(".navbar"),
-		// topMenuHeight = topMenu.outerHeight()+15,
-		// // All list items
-		// menuItems = topMenu.find("a"),
-		// // Anchors corresponding to menu items
-		// scrollItems = menuItems.map(function(){
-		// var item = $($(this).attr("href"));
-		// if (item.length) { return item; }
-		// });
+	// 	var topMenu = $(".navbar"),
+	// 	topMenuHeight = topMenu.outerHeight()+15,
+	// 	// All list items
+	// 	menuItems = topMenu.find("a"),
+	// 	// Anchors corresponding to menu items
+	// 	scrollItems = menuItems.map(function(){
+	// 	var item = $($(this).attr("href"));
+	// 	if (item.length) { return item; }
+	// 	});
 
-		// // Bind to scroll
+		// Bind to scroll
 		// $(window).scroll(function(){
 		// 	// Get container scroll position
 		// 	var fromTop = $(this).scrollTop()+topMenuHeight;
@@ -102,6 +110,6 @@ export class NavbarComponent implements OnInit {
 		// 		});
 		// });
 		
-	});
+	// });
   }
 }
